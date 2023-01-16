@@ -27,12 +27,37 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "vendor/ontario-design-system/",
+                "ignore": [
+                  "html-samples/**/*.*",
+                  "*.*"
+                ],
+                "output": "/vendor/ontario-design-system/"
+              }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "./vendor/ontario-design-system/scripts/ontario-a11y.js",
+                "inject": true,
+                "bundleName": "external-scripts"
+              },
+              {
+                "input": "./vendor/ontario-design-system/scripts/ontario-header.js",
+                "inject": true,
+                "bundleName": "external-scripts"
+              },
+              {
+                "input": "./vendor/ontario-design-system/scripts/svgxuse.js",
+                "inject": true,
+                "bundleName": "external-scripts"
+              }
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,51 @@
+.ontario-step-indicator {
+  /**
+  * Tertiary button defaults are overridden to achieve the mini-button specifications
+  * width is unset in small screen size to remove unnecessary space being added to the button
+  * min-width and max-width are set for small screen size to ensure the "back" button doesn't break and protrude into the text to the right
+  */
+}
+.ontario-step-indicator .ontario-step-indicator--without-back-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ontario-step-indicator .ontario-step-indicator--with-back-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ontario-step-indicator .ontario-h4 {
+  margin: 1.125rem 0;
+}
+@media screen and (max-width: 40em) {
+  .ontario-step-indicator .ontario-h4 {
+    margin: 1rem 0;
+    text-align: right;
+  }
+}
+.ontario-step-indicator .ontario-button.ontario-button--tertiary {
+  margin: 0.75rem 0;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  min-width: 3rem;
+}
+@media screen and (max-width: 40em) {
+  .ontario-step-indicator .ontario-button.ontario-button--tertiary {
+    margin: 0.375rem 0;
+    width: unset;
+    min-width: 7.5rem;
+    max-width: 8rem;
+  }
+}
+.ontario-step-indicator .ontario-button.ontario-button--tertiary .ontario-icon {
+  margin: 0 0.375rem 0 0;
+  padding: 0;
+}
+.ontario-step-indicator hr {
+  padding: 0;
+  margin: 0;
+}
+.ontario-step-indicator p {
+  max-width: 48rem;
+}

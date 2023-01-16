@@ -1,0 +1,72 @@
+.ontario-loading-indicator__overlay {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+}
+.ontario-loading-indicator__overlay[aria-hidden=false] {
+  display: block;
+}
+.ontario-loading-indicator__overlay[aria-hidden=true] {
+  display: none;
+}
+
+.ontario-loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+.ontario-loading-indicator p {
+  color: #4d4d4d;
+  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  word-spacing: 0.025rem;
+  margin: 0.75rem 0 0;
+}
+
+.ontario-loading-indicator__spinner {
+  animation: rotator 1.4s linear infinite;
+  width: 3rem;
+  height: 3rem;
+}
+.ontario-loading-indicator__spinner circle {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite;
+  stroke: #4d4d4d;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}

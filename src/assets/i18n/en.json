@@ -1,0 +1,14 @@
+{
+    "ROOT": {
+        "FEEDBACK_MATTERS": "Your feedback matters",
+        "FEEDBACK_MATTERS_MESSAGE": "To make sure that the care and services we deliver meet your needs and preferences, help us to improve them by providing your feedback!",
+        "PAGE_ALERTS": {
+            "SUCCESS": {
+                "HEADER": "Your submission was successful. Thank you!"
+            },
+            "ERROR": {
+                "HEADER": "There is a problem"
+            }
+        }
+    }
+}

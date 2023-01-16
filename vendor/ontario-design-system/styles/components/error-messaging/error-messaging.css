@@ -1,0 +1,19 @@
+.ontario-error-messaging__container {
+  display: flex;
+  align-items: top;
+  margin: -0.25rem 0 0.5rem 0;
+  color: #D81A21;
+  max-width: 48rem;
+}
+
+.ontario-error-messaging__content {
+  margin-left: 0.5rem;
+}
+
+.ontario-input__error {
+  border-color: #D81A21 !important;
+}
+
+.ontario-checkboxes__single-option .ontario-checkboxes__error .ontario-checkboxes__label:before {
+  border-color: #D81A21;
+}

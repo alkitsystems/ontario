@@ -1,0 +1,23 @@
+@import "../../../sass/variables-import";
+
+.ontario-error-messaging__container {
+    display: flex;
+    align-items: top;
+    margin:-$spacing-1 0 $spacing-2 0;
+    color: $ontario-colour-dark-red;
+    max-width: $standard-width;
+}
+
+.ontario-error-messaging__content {
+    margin-left: $spacing-2;
+}
+
+.ontario-input__error {
+    border-color: $ontario-colour-dark-red !important;
+}
+
+.ontario-checkboxes__single-option .ontario-checkboxes__error {
+    .ontario-checkboxes__label:before {
+        border-color: $ontario-colour-dark-red;
+    }
+}

@@ -1,0 +1,94 @@
+@import '../../../sass/variables-import';
+@import '../../../sass/tools/focus.placeholder';
+
+.ontario-input {
+	border: 2px solid $ontario-colour-black;
+	border-radius: $global-radius;
+	box-sizing: border-box;
+	color: $ontario-colour-black;
+	display: block;
+	font-size: 1rem;
+	font-family: $ontario-font-open-sans;
+	line-height: 1.5;
+	margin: 0 0 $spacing-7;
+	max-width: $standard-width;
+	width: $full-width;
+	padding: 0.625rem $spacing-4;
+	transition: box-shadow 0.1s ease-in-out;
+
+	&:focus,
+	&:active {
+		@extend %ontario-focus;
+	}
+}
+
+.ontario-input--2-char-width {
+    max-width: 8ex;
+    max-width: 8ex;
+}
+
+.ontario-input--3-char-width {
+    max-width: 10ex;
+    min-width: 10ex;
+}
+
+.ontario-input--4-char-width {
+    max-width: 12ex;
+    min-width: 12ex;
+}
+
+.ontario-input--5-char-width {
+    max-width: 14ex;
+    min-width: 14ex;
+}
+
+.ontario-input--7-char-width {
+    max-width: 17ex;
+    min-width: 17ex;
+}
+
+.ontario-input--10-char-width {
+    max-width: 23ex;
+    min-width: 23ex;
+}
+
+.ontario-input--20-char-width {
+    max-width: 41ex;
+    min-width: 41ex;
+}
+
+//General forms
+.ontario-form-group:last-of-type {
+	margin-bottom: 3rem;
+
+	.ontario-checkboxes,
+	.ontario-radios {
+		margin-bottom: 0;
+	}
+}
+
+//Date inputs
+
+.ontario-date__group {
+    display: flex;
+
+    label {
+        font-weight: $ontario-font-weight-semi-bold;
+    }
+
+    input {
+        margin-top: $spacing-4;
+    }
+}
+
+.ontario-date__group-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: $spacing-5;
+}
+
+.ontario-date--error {
+    input {
+        border: 0.125rem solid $ontario-colour-alert;
+    }
+}

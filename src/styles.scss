@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../vendor/ontario-design-system/styles/ds-theme.css';
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.ontario-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.ontario-content-wrapper {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
+footer.ontario-footer--default {
+    position: absolute;
+    width: 100%;
+}

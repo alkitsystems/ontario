@@ -1,0 +1,49 @@
+@import '../../../sass/variables-import';
+
+.ontario-fieldset__legend {
+	cursor: pointer;
+	color: $ontario-colour-black;
+	font-family: $ontario-font-raleway-modified;
+	font-size: 1.1875rem;
+	font-weight: $ontario-font-weight-bold;
+	line-height: 1.5;
+	margin: 0 0 $spacing-4 0;
+	max-width: 38.75em;
+	white-space: normal;
+	width: $full-width;
+
+	@media screen and (max-width: $small-breakpoint) {
+		font-size: 1.125rem;
+		line-height: 1.56;
+	}
+}
+
+.ontario-fieldset__legend--large,
+.ontario-fieldset__legend--heading {
+	font-size: 1.75rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.2;
+	max-width: 26.25em;
+	margin-top: $spacing-4;
+
+	h1 {
+		@extend %h1-styles;
+		display: inline-block;
+		margin: $spacing-0;
+	}
+
+	@media screen and (max-width: $small-breakpoint) {
+		font-size: 1.4375rem;
+		line-height: 1.39;
+	}
+}
+
+.ontario-fieldset__legend__flag {
+	font-family: $ontario-font-open-sans;
+	font-size: 1rem;
+	font-weight: $ontario-font-weight-normal;
+
+	&:before {
+		content: '\a0';
+	}
+}

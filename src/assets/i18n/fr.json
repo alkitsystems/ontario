@@ -1,0 +1,14 @@
+{
+    "ROOT": {
+        "FEEDBACK_MATTERS": "Your feedback matters (Fr)",
+        "FEEDBACK_MATTERS_MESSAGE": "To make sure that the care and services we deliver meet your needs and preferences, help us to improve them by providing your feedback! (Fr)",
+        "PAGE_ALERTS": {
+            "SUCCESS": {
+                "HEADER": "Your submission was successful. Thank you! (Fr)"
+            },
+            "ERROR": {
+                "HEADER": "There is a problem (Fr)"
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#root {
+  margin: 0 15px 15px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ontario-callout,
+.ontario-aside {
+  border-left: 0.25rem solid #367A76;
+  padding: 1.5rem;
+}
+.ontario-callout *,
+.ontario-aside * {
+  max-width: 48rem;
+}
+.ontario-callout *:last-child,
+.ontario-aside *:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.ontario-callout {
+  margin: 2rem 0 2.5rem 0;
+  background-color: #f2f2f2;
+}
+
+.ontario-aside {
+  margin: 2rem 0 2.5rem 2rem;
+}
+
+@media screen and (max-width: 40em) {
+  .ontario-aside {
+    margin: 2rem 0 2.5rem 1rem;
+  }
+}
+.ontario-callout__title,
+.ontario-aside__title {
+  margin-bottom: 1rem;
+}
+
+.ontario-border-highlight--teal {
+  border-color: #367A76 !important;
+}
+
+.ontario-border-highlight--gold {
+  border-color: #86743D !important;
+}
+
+.ontario-border-highlight--yellow {
+  border-color: #8A600D !important;
+}
+
+.ontario-border-highlight--taupe {
+  border-color: #7B725C !important;
+}
+
+.ontario-border-highlight--green {
+  border-color: #2B8737 !important;
+}
+
+.ontario-border-highlight--lime {
+  border-color: #5F8129 !important;
+}
+
+.ontario-border-highlight--sky {
+  border-color: #1080A6 !important;
+}
+
+.ontario-border-highlight--blue {
+  border-color: #0369ac !important;
+}
+
+.ontario-border-highlight--purple {
+  border-color: #92278F !important;
+}

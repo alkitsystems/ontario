@@ -1,0 +1,25 @@
+@import "../../sass/variables-import";
+
+.ontario-date__group {
+    display: flex;
+
+    label {
+        font-weight: $ontario-font-weight-semi-bold;
+    }
+
+    input {
+        margin-top: $spacing-4;
+    }
+}
+
+.ontario-date__group-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: $spacing-5;
+}
+
+.ontario-date--error {
+    input {
+        border: 0.125rem solid $ontario-colour-alert;
+    }
+}
